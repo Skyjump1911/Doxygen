@@ -1,3 +1,12 @@
+/**
+ * @file main.cpp
+ * @author Noah Melton
+ * @date 2025-04-18
+ * @brief this is the main function, wher we test the employee class's methods
+ * 
+ * Here we have a short program which is designed to test what we made in the .h and .cpp files
+ */
+
 
 #include <iostream>
 #include "Employee.h"
@@ -6,8 +15,27 @@
 
 using namespace std;
 
+
+/**
+ * This is a function we made to test some of the other funcitons
+ *
+ * @param Employee & e a reference to an employee object
+ * @pre You just need an employee object to reference 
+ * @return void No return type, this function just tests the member functions of the employee class
+ * @post The tests are run and their respective output is printed
+ * 
+ */
 void runEmployeeTests(Employee & e);
 
+
+/**
+ * The main function 
+ *
+ * @pre N/A
+ * @return int N/A
+ * @post the different tests are run
+ * 
+ */
 int main() {
   // Test default Employee constructor
   Employee defaultE;
@@ -55,6 +83,7 @@ int main() {
   return 0;
 }
 
+//the implementation of the runEmployeeTests function 
 void runEmployeeTests(Employee &e) {
   
   cout << "Initial print():" << endl;
