@@ -1,0 +1,238 @@
+\hypertarget{classEmployee}{}\doxysection{Employee Class Reference}
+\label{classEmployee}\index{Employee@{Employee}}
+
+
+This class keeps up with information related to the employee, such as their employee ID and how many years they have worked.  
+
+
+
+
+{\ttfamily \#include \char`\"{}employee/\+Employee.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Employee\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classEmployee__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classEmployee_a79556ad700627dba88049f487a34a762}{print}} ()
+\item 
+virtual double \mbox{\hyperlink{classEmployee_a01c2c44e15434237db28832f6972e960}{calculate\+Pay}} ()
+\item 
+void \mbox{\hyperlink{classEmployee_a67c345031cf63f515fb09dc675dee5f3}{anniversary}} ()
+\item 
+\mbox{\hyperlink{classEmployee_a003c7bd08c40924e381eb0750cbb906f}{Employee}} ()
+\item 
+\mbox{\hyperlink{classEmployee_ad0c935ef9a290a82dcf7865172c90148}{Employee}} (int ID, int years, double hourly\+Rate, float hours\+Worked)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEmployee_ac31134abb9b4004fc015e51ef579b069}\label{classEmployee_ac31134abb9b4004fc015e51ef579b069}} 
+double {\bfseries hourly\+Rate}
+\item 
+\mbox{\Hypertarget{classEmployee_afde35c73d02eb1cfe89e23a80998b42e}\label{classEmployee_afde35c73d02eb1cfe89e23a80998b42e}} 
+float {\bfseries hours\+Worked}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEmployee_a832bbae4ee8a704b917f82c4d497bbac}\label{classEmployee_a832bbae4ee8a704b917f82c4d497bbac}} 
+int {\bfseries ID}
+\item 
+\mbox{\Hypertarget{classEmployee_a3e4862d9dfc73becb459a562fa2e25f5}\label{classEmployee_a3e4862d9dfc73becb459a562fa2e25f5}} 
+int {\bfseries years}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class keeps up with information related to the employee, such as their employee ID and how many years they have worked. 
+
+The \mbox{\hyperlink{classEmployee}{Employee}} class -- this is how the company keeps track of the info on their employees 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmployee_a003c7bd08c40924e381eb0750cbb906f}\label{classEmployee_a003c7bd08c40924e381eb0750cbb906f}} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+this is the default constructor
+
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the employee class is created with all of the member variables being set to -\/1
+\end{DoxyPostcond}
+The constructor for the employee class
+
+\begin{DoxyPrecond}{Precondition}
+This sets up the member variables of the employee class 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The member variables areae all initialized to -\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classEmployee_ad0c935ef9a290a82dcf7865172c90148}\label{classEmployee_ad0c935ef9a290a82dcf7865172c90148}} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{years,  }\item[{double}]{hourly\+Rate,  }\item[{float}]{hours\+Worked }\end{DoxyParamCaption})}
+
+this is the parameterized constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID this is the employee id \\
+\hline
+{\em int} & years the number of years that an employee has worked at the company \\
+\hline
+{\em double} & hourly\+Rate The hourly rate that the employee is paid at \\
+\hline
+{\em float} & hours\+Worked the number of hours that the employee has worked in the pay period \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The member variables are set to whatever the user specifies in the constructor.
+\end{DoxyPostcond}
+The paramaterized constructor for the employee class
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID the employee id \\
+\hline
+{\em int} & years the number of years that they have worked for the company \\
+\hline
+{\em double} & hourly\+Rate the amount the employee gets paid per hour \\
+\hline
+{\em float} & hours\+Worked the number of hours that an employee has worked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+This function takes the member variables and sets them equal to the values passed in the arguments section 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+the member variables are set equal to whatever is in the parenthesis 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmployee_a67c345031cf63f515fb09dc675dee5f3}\label{classEmployee_a67c345031cf63f515fb09dc675dee5f3}} 
+\index{Employee@{Employee}!anniversary@{anniversary}}
+\index{anniversary@{anniversary}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{anniversary()}{anniversary()}}
+{\footnotesize\ttfamily void Employee\+::anniversary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function is for celebrating the anniversiary of an employee working at the company
+
+\begin{DoxyPrecond}{Precondition}
+N/A -- this function does not need anything to be true, it can be called whenever the user decides 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void this function doesn\textquotesingle{}t return anything, it just adjusts the employee\textquotesingle{}s pay and prints out a celebratory message. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+The employee\textquotesingle{}s pay is slightly bumped up and they are congratualed for their years of work
+\end{DoxyPostcond}
+This function is for celebrating x amount of years an employee works
+
+\begin{DoxyPrecond}{Precondition}
+An employee object must exist for us to be able to call this funciton 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void This funciton raises the employee 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+This funciton raises the employee\textquotesingle{}s hourly rate and congratulates them for their years of work 
+\end{DoxyPostcond}
+
+
+Referenced by run\+Employee\+Tests().
+
+\mbox{\Hypertarget{classEmployee_a01c2c44e15434237db28832f6972e960}\label{classEmployee_a01c2c44e15434237db28832f6972e960}} 
+\index{Employee@{Employee}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily double Employee\+::calculate\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function calculates the pay that an employee is owed
+
+\begin{DoxyPrecond}{Precondition}
+The information (such as hourly rate and hours worked) needs to be entered already 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+virtual No return type--this function only calculates the pay that the employee is owed 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+The employee\textquotesingle{}s pay is printed out
+\end{DoxyPostcond}
+This function calculates the amount of pay that an employee is owed
+
+\begin{DoxyPrecond}{Precondition}
+This function requires that an employee has already entered in the information about how long they have worked 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+double This function returns the dollar amount that an employee is owed. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+The dollar amount for the next paycheck is printed out 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}{Officer}}, and \mbox{\hyperlink{classSupervisor_aa37daa89523c08b84ae8141299e036f8}{Supervisor}}.
+
+
+
+Referenced by Supervisor\+::calculate\+Pay(), and run\+Employee\+Tests().
+
+\mbox{\Hypertarget{classEmployee_a79556ad700627dba88049f487a34a762}\label{classEmployee_a79556ad700627dba88049f487a34a762}} 
+\index{Employee@{Employee}!print@{print}}
+\index{print@{print}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Employee\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is the print function
+
+\begin{DoxyPrecond}{Precondition}
+An existing and populated instance of the employee class must exist 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+virtual no return type, this function just prints out details 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+The details of the employee class instance are printed out
+\end{DoxyPostcond}
+This function prints out the employee info
+
+\begin{DoxyPrecond}{Precondition}
+A valid entry for an employee must already exist 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void This function doesn\textquotesingle{}t return anything, it just prints out what is already in the employee object 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+The details of the employee object is printed out 
+\end{DoxyPostcond}
+
+
+Reimplemented in \mbox{\hyperlink{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}{Officer}}, and \mbox{\hyperlink{classSupervisor_a92483dc9a54904d79b46c6ec4efb3f54}{Supervisor}}.
+
+
+
+Referenced by Officer\+::print(), Supervisor\+::print(), and run\+Employee\+Tests().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+employee/\mbox{\hyperlink{Employee_8h}{Employee.\+h}}\item 
+employee/\mbox{\hyperlink{Employee_8cpp}{Employee.\+cpp}}\end{DoxyCompactItemize}

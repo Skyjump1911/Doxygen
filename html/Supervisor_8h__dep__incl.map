@@ -1,0 +1,5 @@
+<map id="employee/Supervisor.h" name="employee/Supervisor.h">
+<area shape="rect" id="node1" title="This is the header file for the supervisor class." alt="" coords="91,5,262,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title="this is the main function, wher we test the employee class&#39;s methods" alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node3" href="$Supervisor_8cpp.html" title="this is the .cpp (implementation file) for the supervisor class" alt="" coords="181,80,367,107"/>
+</map>

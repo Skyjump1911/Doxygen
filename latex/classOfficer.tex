@@ -1,0 +1,187 @@
+\hypertarget{classOfficer}{}\doxysection{Officer Class Reference}
+\label{classOfficer}\index{Officer@{Officer}}
+
+
+This class specifies which are the public and private member variables and methods of the officer class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}employee/\+Officer.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Officer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classOfficer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Officer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classOfficer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}{print}} ()
+\item 
+double \mbox{\hyperlink{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}{calculate\+Pay}} ()
+\item 
+\mbox{\hyperlink{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}{Officer}} ()
+\item 
+\mbox{\hyperlink{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}{Officer}} (int ID, int years, double hourly\+Rate, float hours\+Worked, double evilness)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOfficer_a63465c5f16e8148e5bc0a3bb4ecd1781}\label{classOfficer_a63465c5f16e8148e5bc0a3bb4ecd1781}} 
+double {\bfseries evilness}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class specifies which are the public and private member variables and methods of the officer class. 
+
+This is the officer class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}\label{classOfficer_a80ac1e36a3f36c3a7e12b5dc9320ad89}} 
+\index{Officer@{Officer}!Officer@{Officer}}
+\index{Officer@{Officer}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{Officer()}{Officer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Officer\+::\+Officer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the default constructor
+
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+an officer class object is created, and the attribute \char`\"{}evilness\char`\"{} is assigned a value of 500
+\end{DoxyPostcond}
+the default constructor for the officer class
+
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+An instance of the officer class is created, and the attribute \char`\"{}evilness\char`\"{} is assigned a value of 500 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}\label{classOfficer_ac75c45d6e8628606278cb4ce6596f67f}} 
+\index{Officer@{Officer}!Officer@{Officer}}
+\index{Officer@{Officer}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{Officer()}{Officer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Officer\+::\+Officer (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{years,  }\item[{double}]{hourly\+Rate,  }\item[{float}]{hours\+Worked,  }\item[{double}]{evilness }\end{DoxyParamCaption})}
+
+the parameterized constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID the officer\textquotesingle{}s id \\
+\hline
+{\em int} & years the number of years that an officer has worked at the company \\
+\hline
+{\em double} & hourly\+Rate the amount that an officer is owed for each hour worked \\
+\hline
+{\em float} & hours\+Worked the number of hours that officer has worked during this pay period \\
+\hline
+{\em double} & evilness an attribute which describes how evil an officer is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+an instance is created with the member variables getting the values that were passed into the parenthesis
+\end{DoxyPostcond}
+This is the parameterized constructor for the officer class
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID the officer\textquotesingle{}s ID \\
+\hline
+{\em int} & years the number of years they have worked at the company \\
+\hline
+{\em double} & hourly\+Rate the rate that the officer gets paid at \\
+\hline
+{\em float} & hours\+Worked the number of hours that the officer has worked in the pay period \\
+\hline
+{\em double} & evilness an abstract and yet somehow quantifiable attribute of the officer in question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+N/A 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+an instance of the officer class is created, with its attributes being whatever is specified by the user in the parenthesis 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}\label{classOfficer_a1fa1aad39b9e95be7a088990ebf17059}} 
+\index{Officer@{Officer}!calculatePay@{calculatePay}}
+\index{calculatePay@{calculatePay}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{calculatePay()}{calculatePay()}}
+{\footnotesize\ttfamily double Officer\+::calculate\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function calculates how much an officer is owed
+
+\begin{DoxyPrecond}{Precondition}
+this function relies upon an officer class existing with predefined pay rates and hours worked 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+double the amount of money owed to the officer 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+the money amount is printed out for the accountant to use for paying the officer 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a01c2c44e15434237db28832f6972e960}{Employee}}.
+
+\mbox{\Hypertarget{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}\label{classOfficer_aeadece05a1a0b7fb29bd412830d2e07a}} 
+\index{Officer@{Officer}!print@{print}}
+\index{print@{print}!Officer@{Officer}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Officer\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function just prints out the attributes of an officer
+
+\begin{DoxyPrecond}{Precondition}
+You just need an officer class instance to have been created 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void this function just prints out details, and doesn\textquotesingle{}t return anything 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+the details of the officer class are printed out
+\end{DoxyPostcond}
+this function just prints out the details for an officer
+
+\begin{DoxyPrecond}{Precondition}
+you need an officer instance that has been created with valid values 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+void No return type, this function just prints out the contents of the officer class 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+the details are printed out for the user to see 
+\end{DoxyPostcond}
+
+
+Reimplemented from \mbox{\hyperlink{classEmployee_a79556ad700627dba88049f487a34a762}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+employee/\mbox{\hyperlink{Officer_8h}{Officer.\+h}}\item 
+employee/\mbox{\hyperlink{Officer_8cpp}{Officer.\+cpp}}\end{DoxyCompactItemize}
